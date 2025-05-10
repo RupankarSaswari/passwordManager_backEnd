@@ -129,7 +129,7 @@ public class LoginRepo {
             return true;
         } catch (DataAccessException e) {
             // Handle the exception and clean up if needed
-            System.out.println("Failed to create table: " + e.getMessage());
+           // System.out.println("Failed to create table: " + e.getMessage());
             return false;
             // Optionally: Add logic to drop the table if partial creation happened
         }

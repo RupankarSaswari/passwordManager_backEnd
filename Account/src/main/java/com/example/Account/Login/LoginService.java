@@ -23,8 +23,8 @@ public class LoginService {
         if(table) {
             loginDataList.add("username = "+loginModelClass.getUsername());
             loginDataList.add("password = "+loginModelClass.getPassword());
-//            loginDataList.add("key = "+loginModelClass.getKey());
-//            loginDataList.add("ivparameterspec"+loginModelClass.getIvParameterSpec());
+            loginDataList.add("key = "+loginModelClass.getKey());
+            loginDataList.add("ivparameterspec"+loginModelClass.getIvParameterSpec());
             if (usersPassword.equals(loginModelClass.getPassword())) {
 
                 loginDataList.add("password matched");

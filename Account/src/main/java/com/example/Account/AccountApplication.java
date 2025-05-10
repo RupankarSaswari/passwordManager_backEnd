@@ -17,20 +17,20 @@ public class AccountApplication {
 	public static void main(String[] args) throws NoSuchAlgorithmException, UnsupportedEncodingException {
 
 		ApplicationContext context = SpringApplication.run(AccountApplication.class, args);
+//
+//		LoginRepo loginRepo = context.getBean(LoginRepo.class);
+//		loginRepo.dropTable("rupankarinfo");
+//		Boolean b = loginRepo.getTable("rupankar");
+//		System.out.println(b);
 
-		LoginRepo loginRepo = context.getBean(LoginRepo.class);
-		loginRepo.dropTable("rupankarinfo");
-		Boolean b = loginRepo.getTable("rupankar");
-		System.out.println(b);
-
-		LoginController loginController = context.getBean(LoginController.class);
-		loginController.loginController("rupankar","704498");
-
-		AccountCreateController accountCreateController = context.getBean(AccountCreateController.class);
-		accountCreateController.accountCreateController("rupankar","704498");
-
-		HashingUtil hashingUtil = new HashingUtil();
-		System.out.println(hashingUtil.getHashPassword("704498"));
+//		LoginController loginController = context.getBean(LoginController.class);
+//		loginController.loginController("rupankar","704498");
+//
+//		AccountCreateController accountCreateController = context.getBean(AccountCreateController.class);
+//		accountCreateController.accountCreateController("rupankar","704498");
+//
+//		HashingUtil hashingUtil = new HashingUtil();
+//		System.out.println(hashingUtil.getHashPassword("704498"));
 
 	}
 
